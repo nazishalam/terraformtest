@@ -6,16 +6,8 @@ instance_type = "t3.large"
 
 subnet_id = "subnet-a2266dca"
 
-associate_public_ip_address "{"true"}"
-
 vpc_security_group_ids = [ "sg-0e091161531fd16b0" ]
 
-key_name {"roombr-staging-admin"}
-
-tags {
-
-Name = "testinstance-02"
-
-}
+key_name = "roombr-staging-admin"
 
 }
