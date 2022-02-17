@@ -10,4 +10,7 @@ vpc_security_group_ids = [ "sg-0e091161531fd16b0" ]
 
 key_name = "roombr-staging-admin"
 
+tags = {
+        Name = "Terraform EC2"
+    }
 }
