@@ -13,4 +13,18 @@ key_name = "roombr-staging-admin"
 tags = {
         Name = "Terraform EC2"
     }
+        
+provisioner "file" {
+    source      = "/home/developer/india.txt"
+    destination = "/home/developer/india.txt"
+  }
+
+  connection {
+      type        = "ssh"
+      host        = self.public_ip
+      user        = "developer"
+      private_key = file("/home/developer/private_key/roombr-staging-developer")
+      timeout     = "2m"
+   }
+
 }
