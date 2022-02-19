@@ -15,8 +15,8 @@ tags = {
     }
         
 provisioner "file" {
-    source      = "/home/developer/india.txt"
-    destination = "/home/developer/india.txt"
+    source      = "/home/developer/nazish_data"
+    destination = "/home/developer/nazish_data"
   }
 
   connection {
