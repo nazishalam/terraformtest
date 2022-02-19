@@ -25,7 +25,7 @@ provisioner "file" {
       user        = "developer"
       //private_key = file("/home/developer/private_key/roombr-staging-developer")
       private_key = file("/var/lib/jenkins/private_key/roombr-staging-developer")
-      timeout     = "2m"
+      timeout     = "3m"
    }
 
 }
