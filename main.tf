@@ -1,6 +1,6 @@
 resource "aws_instance" "testinstance-02" {
 
-ami = "ami-0332e2eb2b94e44e0"
+ami = "ami-009f36f79af6062cc"
 
 instance_type = "t3.large"
 
